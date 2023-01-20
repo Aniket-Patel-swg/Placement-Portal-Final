@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import data from "./components/Card/CardData"
 import App from './App';
+import PlacementTable from "./components/Table/PlacementTable";
+
 import {
   createBrowserRouter,
   RouterProvider
@@ -33,6 +35,10 @@ const router = createBrowserRouter([
   {
     path: "/resume",
     element: <Resume />
+  },
+  {
+    path: "/tables",
+    element: <PlacementTable/>
   }
   // {
   //   path:"/resumeBuilder",
