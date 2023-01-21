@@ -30,8 +30,10 @@ In todays era, the corporate world is ever changing, with old industries being p
           <span className={styles.textbox2}>Our portal also presents it’s users with the placement statistics obtained from the previously collected student data. This give the user an insight into the effectiveness of the portal. A user can also have an idea of the extent up to which the portal can be useful to them in their own required way.
 
 The statistics here have been presented in the most convenient way possible. You are just one click away from what you seek.
-</span>
-          <button className={styles.button2}>Get Analytics Now !!</button>
+</span>   
+          <a href="/placement_stats">
+            <button className={styles.button2}>Get Analytics Now !!</button>
+          </a>
           <img src={placement} alt="leftimage"className={styles.placement}/>
         </div>
 
@@ -47,7 +49,7 @@ Even after a student has graduated, their contact is maintained by the means of 
         </div>
 
         <div className={styles.buildresume}>
-          <span className={styles.header4}>Build your Resume</span>
+            <span className={styles.header4}>Build your Resume</span>
           <span className={styles.textbox4}>What is a resume, and why is it so important? It’s merely a piece of paper, but a piece wherein all the information about a candidate, including their education, qualification and other achievements, is penned down. Thus, a resume becomes a very important tool for a student if he/she is willing to apply for a job or further courses. A good resume can have a large impact on your chance of achieving the above mentioned goals.
 
             But how should one write their resume in the correct way? This portal has got it all covered. It provides the users with guidelines on how to build a good resume so that they can present themselves in an appropriate manner, whenever they go for a particular interview.
@@ -59,7 +61,7 @@ Even after a student has graduated, their contact is maintained by the means of 
             Advisors
             Colleagues or Project partners
             Along with this, a proper pathway wil be provided to students to build a perfect resume they desire for.</span>
-            <a href="/resume">
+            <a href="/resume_bulider">
               <button className={styles.button4}>Manage it Now !!</button>
             </a>
           <img src={resume} alt="leftimage" className={styles.resume}/>

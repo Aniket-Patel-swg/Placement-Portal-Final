@@ -15,6 +15,8 @@ import Dashboard from './pages/Dashboard.jsx';
 import CardPage from './pages/CardPage';
 import Resume from './pages/BuildYourResume.jsx';
 import Club_intro from './components/Club_info/Club_intro';
+import Placement_stats from './components/PlacementStats/PlacementStats';
+import Resume_builder from './components/ResumeBuilder/Resumebuilder';
 
 const router = createBrowserRouter([
   {
@@ -44,6 +46,14 @@ const router = createBrowserRouter([
   {
     path: "/club",
     element: <Club_intro />
+  },
+  {
+    path: "/placement_stats",
+    element: <Placement_stats />
+  },
+  {
+    path: "/resume_bulider",
+    element: <Resume_builder />
   }
   // {
   //   path:"/resumeBuilder",
