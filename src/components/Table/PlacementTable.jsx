@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Header from "../Header/Header";
 import "./Table.css";
 
 
@@ -11,6 +12,7 @@ function CreateTable() {
     showAll?setShowAll(false):setShowAll(true);
   }
   return (<div className="projectTableWrapper" style={{}}>
+    <Header />
   <div style={{display:"float"}}>
       <p style={{float:"left"}}>Your Projects</p>
       <p style={{float:"right",paddingLeft:"2rem"}}>+ New Project</p>

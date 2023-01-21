@@ -25,19 +25,19 @@ function Header() {
             <a href="/dashboard">Dashboard</a>
           </li>
           <li>
-            <a href="/home">Explore</a>
+            <a href="/tables">tables</a>
           </li>
           <li>
-            <a href="/home">About</a>
+            <a href="/club">Clubs</a>
           </li>
           <li>
-            <a href="/home">Link 2</a>
+            <a href="/">Link 2</a>
           </li>
           <li>
-            <a href="/home">Link 3</a>
+            <a href="/">Link 3</a>
           </li>
           <li>
-            <a href="/home">Link 4</a>
+            <a href="/">Link 4</a>
           </li>
         </ul>
       </div>
