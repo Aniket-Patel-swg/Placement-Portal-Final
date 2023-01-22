@@ -8,6 +8,7 @@ import PlacementTable from "./components/Table/PlacementTable";
 import Club_intro from "./components/Club_info/Club_intro.jsx";
 import Placement_stats from "./components/PlacementStats/PlacementStats.jsx";
 import Resumebuilder from "./components/ResumeBuilder/Resumebuilder.jsx";
+import All_clubs from "./components/All_clubs.jsx";
 // import { Profile } from "./components/Profile Page Component/Profile.jsx";
 function App() {
     
@@ -18,10 +19,11 @@ function App() {
         <Route path="/students/dashboard" element={<></>} />
         <Route path="/students/student" element={<ProfilePage />} />
         <Route path="/students/community" element={<CardPage data={data} />} />
-        <Route path="/studnets/tables" element={<PlacementTable/>} />
+        <Route path="/students/tables" element={<PlacementTable/>} />
         <Route path="/students/club" element={<Club_intro />} />
         <Route path="/students/placement_stats" element={<Placement_stats />} />
         <Route path="/students/resume_builder" element={<Resumebuilder />} />
+        <Route path="/students/all_clubs" element={<All_clubs />} />
       </Routes>
     </div>
   );

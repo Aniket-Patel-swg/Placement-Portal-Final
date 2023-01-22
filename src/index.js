@@ -17,6 +17,7 @@ import Resume from './pages/BuildYourResume.jsx';
 import Club_intro from './components/Club_info/Club_intro';
 import Placement_stats from './components/PlacementStats/PlacementStats';
 import Resume_builder from './components/ResumeBuilder/Resumebuilder';
+import All_clubs from './components/All_clubs';
 
 const router = createBrowserRouter([
   {
@@ -54,6 +55,10 @@ const router = createBrowserRouter([
   {
     path: "/students/resume_bulider",
     element: <Resume_builder />
+  },
+  {
+    path: "/students/all_clubs",
+    element: <All_clubs />
   }
   // {
   //   path:"/resumeBuilder",

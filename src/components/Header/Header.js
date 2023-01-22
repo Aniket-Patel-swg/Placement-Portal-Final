@@ -25,10 +25,10 @@ function Header() {
             <a href="/students/dashboard">Dashboard</a>
           </li>
           <li>
-            <a href="/studnets/tables">tables</a>
+            <a href="/students/placement_stats">Placement Details</a>
           </li>
           <li>
-            <a href="/students/club">Clubs</a>
+            <a href="/students/all_clubs">Clubs</a>
           </li>
           <li>
             <a href="/">Link 2</a>
