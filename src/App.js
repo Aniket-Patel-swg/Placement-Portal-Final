@@ -15,13 +15,13 @@ function App() {
     <div className="App">
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/dashboard" element={<></>} />
-        <Route path="/student" element={<ProfilePage />} />
-        <Route path="/community" element={<CardPage data={data} />} />
-        <Route path="/tables" element={<PlacementTable/>} />
-        <Route path="/club" element={<Club_intro />} />
-        <Route path="/placement_stats" element={<Placement_stats />} />
-        <Route path="/resume_builder" element={<Resumebuilder />} />
+        <Route path="/students/dashboard" element={<></>} />
+        <Route path="/students/student" element={<ProfilePage />} />
+        <Route path="/students/community" element={<CardPage data={data} />} />
+        <Route path="/studnets/tables" element={<PlacementTable/>} />
+        <Route path="/students/club" element={<Club_intro />} />
+        <Route path="/students/placement_stats" element={<Placement_stats />} />
+        <Route path="/students/resume_builder" element={<Resumebuilder />} />
       </Routes>
     </div>
   );

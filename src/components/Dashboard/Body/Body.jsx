@@ -31,7 +31,7 @@ In todays era, the corporate world is ever changing, with old industries being p
 
 The statistics here have been presented in the most convenient way possible. You are just one click away from what you seek.
 </span>   
-          <a href="/placement_stats">
+          <a href="/students/placement_stats">
             <button className={styles.button2}>Get Analytics Now !!</button>
           </a>
           <img src={placement} alt="leftimage"className={styles.placement}/>
@@ -61,7 +61,7 @@ Even after a student has graduated, their contact is maintained by the means of 
             Advisors
             Colleagues or Project partners
             Along with this, a proper pathway wil be provided to students to build a perfect resume they desire for.</span>
-            <a href="/resume_bulider">
+            <a href="/students/resume_bulider">
               <button className={styles.button4}>Manage it Now !!</button>
             </a>
           <img src={resume} alt="leftimage" className={styles.resume}/>

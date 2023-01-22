@@ -24,35 +24,35 @@ const router = createBrowserRouter([
     element: <HomePage />
   },
   {
-    path: "/dashboard",
+    path: "/students/dashboard",
     element: <Dashboard />
   },
   {
-    path: "/student",
+    path: "/students/student",
     element: <ProfilePage />
   },
   {
-    path: "/community",
+    path: "/students/community",
     element: <CardPage data={data} />
   },
   {
-    path: "/resume",
+    path: "/studnets/resume",
     element: <Resume />
   },
   {
-    path: "/tables",
+    path: "/students/tables",
     element: <PlacementTable/>
   },
   {
-    path: "/club",
+    path: "/students/club",
     element: <Club_intro />
   },
   {
-    path: "/placement_stats",
+    path: "/students/placement_stats",
     element: <Placement_stats />
   },
   {
-    path: "/resume_bulider",
+    path: "/students/resume_bulider",
     element: <Resume_builder />
   }
   // {

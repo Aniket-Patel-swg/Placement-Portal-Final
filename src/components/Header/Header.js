@@ -22,13 +22,13 @@ function Header() {
             <a href="/">Home</a>
           </li>
           <li>
-            <a href="/dashboard">Dashboard</a>
+            <a href="/students/dashboard">Dashboard</a>
           </li>
           <li>
-            <a href="/tables">tables</a>
+            <a href="/studnets/tables">tables</a>
           </li>
           <li>
-            <a href="/club">Clubs</a>
+            <a href="/students/club">Clubs</a>
           </li>
           <li>
             <a href="/">Link 2</a>
