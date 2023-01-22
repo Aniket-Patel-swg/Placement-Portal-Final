@@ -202,9 +202,9 @@ const Placement_stats = () => {
                             <CartesianGrid strokeDasharray={5} vertical={false} />
                             <XAxis dataKey="Branch"
                             />
-                                <Line  dataKey="avg" stroke="green" 
+                                <Line  dataKey="avg" stroke="Blue" 
                                 />
-                                <Line dataKey="highest" stroke="cyan"/>
+                                <Line dataKey="highest" stroke="orange"/>
                             <YAxis />
                             <Tooltip contentStyle={{ backgroundColor:'#f1f1f1'}} />
                             <Legend />
@@ -216,9 +216,9 @@ const Placement_stats = () => {
                             <CartesianGrid strokeDasharray={5} vertical={false} />
                             <XAxis dataKey="Branch"
                             />
-                                <Line  dataKey="avg" stroke="green" 
+                                <Line  dataKey="avg" stroke="purple" 
                                 />
-                                <Line dataKey="highest" stroke="cyan"/>
+                                <Line dataKey="highest" stroke="grey"/>
                             <YAxis />
                             <Tooltip contentStyle={{ backgroundColor:'#f1f1f1'}} />
                             <Legend />

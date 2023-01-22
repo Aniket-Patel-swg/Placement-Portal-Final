@@ -2,6 +2,7 @@ import React from "react";
 
 export default function Footer() {
   return (
+    
     <footer>
       <div className="Footer flex h-[220px] w-full font-Poppins">
         <div className="Footer_Container1 w-[33.5%] h-full bg-[#F68C1F] opacity-100 bg-[url('./images/Pdeu_transparent_logo.png')] bg-no-repeat bg-center bg-[length:318px_93px]"></div>
