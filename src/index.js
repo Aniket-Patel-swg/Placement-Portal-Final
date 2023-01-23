@@ -29,7 +29,7 @@ const router = createBrowserRouter([
     element: <Dashboard />
   },
   {
-    path: "/students/student",
+    path: "/students/profile",
     element: <ProfilePage />
   },
   {
@@ -40,10 +40,10 @@ const router = createBrowserRouter([
     path: "/studnets/resume",
     element: <Resume />
   },
-  {
-    path: "/students/tables",
-    element: <PlacementTable/>
-  },
+  // {
+  //   path: "/students/tables",
+  //   element: <PlacementTable/>
+  // },
   {
     path: "/students/club",
     element: <Club_intro />

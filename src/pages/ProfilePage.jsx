@@ -8,7 +8,7 @@ import { SocialMedia } from '../components/Profile Page Component/SocialMedia';
 import { Profile } from '../components/Profile Page Component/Profile';
 import Header from "../components/Header/Header"
 import Footer from "../components/Footer"
-
+import CreateTable from '../components/Table/PlacementTable';
 
 export const ProfilePage = () => {
   return (
@@ -21,6 +21,7 @@ export const ProfilePage = () => {
       <Clubs />
       <SocialMedia />
       <Projects />
+      <CreateTable />
       <Footer />
     </div>
   )

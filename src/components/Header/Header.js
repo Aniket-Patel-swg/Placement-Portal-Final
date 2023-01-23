@@ -31,7 +31,7 @@ function Header() {
             <a href="/students/all_clubs">Clubs</a>
           </li>
           <li>
-            <a href="/">Link 2</a>
+            <a href="/students/profile">Profile</a>
           </li>
           <li>
             <a href="/">Link 3</a>

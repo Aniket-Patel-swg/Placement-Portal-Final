@@ -17,9 +17,9 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/students/dashboard" element={<></>} />
-        <Route path="/students/student" element={<ProfilePage />} />
+        <Route path="/students/profile" element={<ProfilePage />} />
         <Route path="/students/community" element={<CardPage data={data} />} />
-        <Route path="/students/tables" element={<PlacementTable/>} />
+        {/* <Route path="/students/tables" element={<PlacementTable/>} /> */}
         <Route path="/students/club" element={<Club_intro />} />
         <Route path="/students/placement_stats" element={<Placement_stats />} />
         <Route path="/students/resume_builder" element={<Resumebuilder />} />

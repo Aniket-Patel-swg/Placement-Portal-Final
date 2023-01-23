@@ -70,10 +70,21 @@ Even after a student has graduated, their contact is maintained by the means of 
         <div className={styles.researchproposal}>
           <span className={styles.header5}>Research Proposal</span>
           <span className={styles.textbox5}>Research Proposals are a must for people who are attempting to finish their PhD course and are very helpful for students who are willing to apply to a university for further studies. In a nutshell, a research proposal can be characterized as something that:
-Provides evidence of the expertise required to support one’s area of research.
-Forms an integral part of the assessment of a particular application.
-To make sure that a student’s research proposal adopts the above mentioned characteristics properly, it is necessary for the students to achieve proper guidance. Guidance is given in terms of how long the proposal should be and what all should it contain. The user does not need to worry, as this portal takes care of all the instructions and guidelines required to create a perfect research proposal. Along with this, students at PDEU can work under the leadership of various faculties present and take part in a wide range of research-based activities. 
-Click on the button given here to start working on your own Research Proposal, right now!!</span>
+              Provides evidence of the expertise required to support one’s area of research.
+              Forms an integral part of the assessment of a particular application.
+              To make sure that a student’s research proposal adopts the above mentioned characteristics properly, it is necessary for the students to achieve proper guidance. Guidance is given in terms of how long the proposal should be and what all should it contain. The user does not need to worry, as this portal takes care of all the instructions and guidelines required to create a perfect research proposal. Along with this, students at PDEU can work under the leadership of various faculties present and take part in a wide range of research-based activities. 
+              Click on the button given here to start working on your own Research Proposal, right now!!</span>
+          <button className={styles.button5}>coming soon...</button>
+          <img src={research} alt="rightimage" className={styles.research}/>
+        </div>
+
+        <div className={styles.researchproposal}>
+          <span className={styles.header5}>Research Proposal</span>
+          <span className={styles.textbox5}>Research Proposals are a must for people who are attempting to finish their PhD course and are very helpful for students who are willing to apply to a university for further studies. In a nutshell, a research proposal can be characterized as something that:
+              Provides evidence of the expertise required to support one’s area of research.
+              Forms an integral part of the assessment of a particular application.
+              To make sure that a student’s research proposal adopts the above mentioned characteristics properly, it is necessary for the students to achieve proper guidance. Guidance is given in terms of how long the proposal should be and what all should it contain. The user does not need to worry, as this portal takes care of all the instructions and guidelines required to create a perfect research proposal. Along with this, students at PDEU can work under the leadership of various faculties present and take part in a wide range of research-based activities. 
+              Click on the button given here to start working on your own Research Proposal, right now!!</span>
           <button className={styles.button5}>coming soon...</button>
           <img src={research} alt="rightimage" className={styles.research}/>
         </div>
