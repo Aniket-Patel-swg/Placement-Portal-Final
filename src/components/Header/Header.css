@@ -8,3 +8,17 @@
 .nav-links-list a{
   color: white;
 }
+
+@media (max-width: 1150px) {
+  #normal-nav{
+    display: none;
+  }
+  #hamburger-nav{
+    visibility: visible;
+  }
+}
+@media (min-width: 1150px) {
+  #hamburger-nav{
+    display: none;
+  }
+}

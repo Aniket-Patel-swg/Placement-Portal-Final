@@ -1,6 +1,7 @@
 import React from 'react'
 import image from './images/Rectangle19.png'
 import imagereact from './images/logo192.png'
+
 export const Profile = () => {
   return (
     <div className='mt-24'>
