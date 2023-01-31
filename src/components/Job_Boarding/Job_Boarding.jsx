@@ -1,12 +1,12 @@
 import Header from "../Header/Header";
+import React from "react";
 
 const Job_Boarding = () => {
     return ( 
         <>
           <Header/>
           <p>Job_Boarding</p>
-          <a href="/"><button>Apply Job</button></a>
-
+          <a href="/students/apply_page"><button>Apply Job</button></a>
         </>
      );
 }

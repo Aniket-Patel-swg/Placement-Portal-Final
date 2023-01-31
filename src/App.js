@@ -9,6 +9,8 @@ import Club_intro from "./components/Club_info/Club_intro.jsx";
 import Placement_stats from "./components/PlacementStats/PlacementStats.jsx";
 import Resumebuilder from "./components/ResumeBuilder/Resumebuilder.jsx";
 import All_clubs from "./components/All_clubs.jsx";
+import Job_Boarding from "./components/Job_Boarding/Job_Boarding.jsx";
+import ApplyPage from "./pages/ApplyPage.jsx";
 // import { Profile } from "./components/Profile Page Component/Profile.jsx";
 function App() {
     
@@ -24,6 +26,8 @@ function App() {
         <Route path="/students/placement_stats" element={<Placement_stats />} />
         <Route path="/students/resume_builder" element={<Resumebuilder />} />
         <Route path="/students/all_clubs" element={<All_clubs />} />
+        <Route path="/students/job_boarding" element={<Job_Boarding />} />
+        <Route path="/students/apply_page" element={<ApplyPage />} />
       </Routes>
     </div>
   );

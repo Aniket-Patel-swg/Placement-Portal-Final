@@ -18,6 +18,8 @@ import Club_intro from './components/Club_info/Club_intro';
 import Placement_stats from './components/PlacementStats/PlacementStats';
 import Resume_builder from './components/ResumeBuilder/Resumebuilder';
 import All_clubs from './components/All_clubs';
+import Job_Boarding from './components/Job_Boarding/Job_Boarding';
+import ApplyPage from './pages/ApplyPage';
 
 const router = createBrowserRouter([
   {
@@ -59,6 +61,14 @@ const router = createBrowserRouter([
   {
     path: "/students/all_clubs",
     element: <All_clubs />
+  },
+  {
+    path: "/students/job_boarding",
+    element: <Job_Boarding />
+  },
+  {
+    path: "/students/apply_page",
+    element: <ApplyPage />
   }
   // {
   //   path:"/resumeBuilder",

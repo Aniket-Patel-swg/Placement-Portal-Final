@@ -8,7 +8,6 @@ import { Link } from "react-router-dom";
 
 function Header() {
 
-
   const [isOpen, setIsOpen] = useState(false);
   return (
     <>
