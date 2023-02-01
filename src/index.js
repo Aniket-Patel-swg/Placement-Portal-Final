@@ -20,6 +20,12 @@ import Resume_builder from './components/ResumeBuilder/Resumebuilder';
 import All_clubs from './components/All_clubs';
 import Job_Boarding from './components/Job_Boarding/Job_Boarding';
 import ApplyPage from './pages/ApplyPage';
+import RecruiterLogin from './pages/RecruiterLogin';
+import RecruiterAdminPanel from './pages/RecruiterAdminPanel';
+import PostJob from './pages/PostJob';
+import TechnicalTestLogin from './pages/TechnicalTestLogin';
+import JobPosting from './components/JobPosting/JobPosting';
+import QuizApp from './pages/QuizApp';
 
 const router = createBrowserRouter([
   {
@@ -69,6 +75,30 @@ const router = createBrowserRouter([
   {
     path: "/students/apply_page",
     element: <ApplyPage />
+  },
+  {
+    path: "/recruiter/login",
+    element: <RecruiterLogin />
+  },
+  {
+    path: "/recruiter/admin_panel",
+    element: <RecruiterAdminPanel />
+  },
+  {
+    path: "/recruiter/post_job",
+    element: <PostJob />
+  },
+  {
+    path: "/students/technical_test_login",
+    element: <TechnicalTestLogin />
+  },
+  {
+    path: "/recruiter/job_posting",
+    element: <JobPosting />
+  },
+  {
+    path: "/students/quiz_app",
+    element: <QuizApp />
   }
   // {
   //   path:"/resumeBuilder",
