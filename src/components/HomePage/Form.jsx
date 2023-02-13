@@ -1,12 +1,13 @@
 import React from "react";
-import axios from "axios"
+import axios from "axios";
+import { data } from "autoprefixer";
 
 export default function Form() {
   const [email, setEmail] = React.useState("");
   const [password, setPassword] = React.useState("");
   // const handleSubmit = async(e) => {
   //   e.preventDefault();
-  //   const data = await axios.post("http://localhost:5000/api/v1/login", {email,password})
+  //   const data = await axios.post("http://localhost:5000/api/v1/login", {email,password}).then(alert('Submitted')).catch(error => {console.log('error')})
   //   console.log(data)
   // };
 
@@ -19,17 +20,20 @@ export default function Form() {
     setPassword(e.target.value)
   }
 
-  const handleLogin = async(email,password) => {
+  const handleLogin = async(e) => {
+
+
+    e.preventDefault();
     JSON.stringify(email)
     JSON.stringify(password)
-    console.log(email, password)
-    // try {
-    //   const {data} = await axios.post("http://localhost:5000/api/v1/login", {email,password})
-    //   console.log(data)
-    // } catch (error) {
-    //   console.log(error)
-    // }
-    
+    console.log(email, password);
+    try {
+      // const {data} = await axios.post("http://localhost:5000/api/v1/login", {email,password})
+      const data = await axios.post("http://localhost:5000/api/v1/login", {email,password}).then(console.log({email,password})).catch(error => {console.log('error')})
+      console.log(data)
+    } catch (error) {
+      console.log(error)
+    }
   }
   return (
     <div className="form bg-[#1F3368] h-[400px]  rounded-2xl ml-20  mr-24 pl-4 opacity-[0.85] text-lg font-normal">
@@ -44,6 +48,7 @@ export default function Form() {
         <input
           className="form__input w-[380px] h-[50px] rounded-xl mb-2 bg-white focus:outline-none text-xl text-black pl-1"
           type="email"
+          name="email"
           required
           value={email}
           onChange={handleEmail}
@@ -53,6 +58,7 @@ export default function Form() {
           className="form__input w-[380px] h-[50px] rounded-xl mb-2 bg-white focus:outline-none text-xl  text-black pl-1"
           type="password"
           required
+          name="password"
           value={password}
           onChange={handlePass}
         />
@@ -69,15 +75,18 @@ export default function Form() {
           <p>
             <a
               className="no-underline text-orange text-lg hover:text-white"
-              href="#"
+              href="/students/register"
             >
               Not registered?{" "}
             </a>
           </p>
         </div>
+        <div className="error-section">
+          {}
+        </div>
         <button
           className="form__input submitbtn w-[380px] h-[50px] rounded-xl mb-2 focus:outline-none m-0 p-0 bg-orange-500 text-white text-2xl border-none mt-3 hover:text-orange hover:bg-white hover:text-black"
-          type="submit" onClick={() => handleLogin(email,password)}
+          type="submit" onClick={(e) => handleLogin(e)}
         >
           Submit
         </button>

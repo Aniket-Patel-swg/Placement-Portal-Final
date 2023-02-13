@@ -1,0 +1,31 @@
+.comming{
+    padding: 8em;
+    text-align: center;
+    background-color: rgb(255, 239, 241);
+}
+.comming h1{
+    font-size: 2.5em;
+    font-weight: 600;
+}
+.comming p{
+    font-size: 1.2em;
+    font-weight: 300;
+}
+.Button{
+    padding: 2em;
+}
+.Button button{
+    background-color: #1F3368;
+    padding: 1.3em;
+    border-radius: 1.2em;
+}
+.Button p{
+    color: white;
+    font-weight: 500;
+}
+.main{
+    text-align: center;
+    padding: 2.3em;
+    font-weight: 500;
+    font-size: 2em;
+}
