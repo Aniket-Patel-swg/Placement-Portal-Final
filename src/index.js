@@ -4,19 +4,15 @@ import "./index.css"
 import data from "./components/Card/CardData"
 import App from "./App"
 import PlacementTable from "./components/Table/PlacementTable"
-
+import HowItWorks from './components/HowItWorks.jsx';
 import {createBrowserRouter, RouterProvider} from "react-router-dom"
 import HomePage from "./pages/HomePage"
 import {ProfilePage} from "./pages/ProfilePage"
 import Dashboard from "./pages/Dashboard.jsx"
 import CardPage from "./pages/CardPage"
-import Resume from "./pages/BuildYourResume.jsx"
 import ClubIntro from "./components/ClubInfo/ClubIntro"
 import PlacementStats from "./components/PlacementStats/PlacementStats"
-import ResumeBuilder from "./components/ResumeBuilder/Resumebuilder"
 import AllClubs from "./components/AllCubs"
-import JobBoarding from "./components/JobBoarding/JobBoarding"
-import ApplyPage from "./pages/ApplyPage"
 import RecruiterLogin from "./pages/RecruiterLogin"
 import RecruiterAdminPanel from "./pages/RecruiterAdminPanel"
 import PostJob from "./pages/PostJob"
@@ -32,6 +28,18 @@ import Companies from "./components/ResourcePageComponents/Companies"
 import ResumeInfo from "./components/ResourcePageComponents/ResumeInfo"
 import Analysis from "./components/ResourcePageComponents/Analytics"
 import EventDetails from "./components/ResourcePageComponents/EventsDetails"
+import Job_Boarding from "./components/JobBoarding/Job_Borading"
+import Form from "./components/JobBoarding/Form"
+import CompanyProfile from "./components/JobPosting/CompanyProfile"
+import ExperiencePage from "./pages/ExperiencePage"
+import JobLists from "./components/JobPosting/JobLists"
+import JobDetails from "./pages/JobDetails"
+import Body from "./components/ResumeBuilder/Body/Body"
+import Student_Login from './pages/Student_Login.jsx';
+import Recruiter_Login from "./pages/Recruiter_Login"
+import Admin_Login from "./pages/Admin_Login"
+import StudentHomePage from "./components/HomePage/StudentHomePage"
+import RecruiterHomePage from "./components/HomePage/RecruiterHomePage"
 
 axios.defaults.withCredentials = true
 
@@ -52,10 +60,6 @@ const router = createBrowserRouter([
     path: "/students/community",
     element: <CardPage data={data} />,
   },
-  {
-    path: "/studnets/resume",
-    element: <Resume />,
-  },
   // {
   //   path: "/students/tables",
   //   element: <PlacementTable/>
@@ -65,24 +69,16 @@ const router = createBrowserRouter([
     element: <ClubIntro />,
   },
   {
-    path: "/students/placementStats",
+    path: "/general/placementStats",
     element: <PlacementStats />,
   },
   {
-    path: "/students/resumebulider",
-    element: <ResumeBuilder />,
+    path: "/students/resumebuilder",
+    element: <Body />,
   },
   {
-    path: "/students/allclubs",
+    path: "/general/allclubs",
     element: <AllClubs />,
-  },
-  {
-    path: "/students/jobboarding",
-    element: <JobBoarding />,
-  },
-  {
-    path: "/students/applypage",
-    element: <ApplyPage />,
   },
   {
     path: "/recruiter/login",
@@ -111,11 +107,12 @@ const router = createBrowserRouter([
   {
     path: "/students/register",
     element: <Register />,
-  },
-  {
-    path: "/students/resource",
-    element: <Resources />,
-  },
+  }
+  // {
+  //   path: "/students/resource",
+  //   element: <Resources />,
+  // }
+  ,
   {
     path: "/students/resource/process",
     element: <PlacementRoadmap />,
@@ -139,6 +136,58 @@ const router = createBrowserRouter([
   {
     path: "/students/resource/eventdetails",
     element: <EventDetails />,
+  },
+  {
+    path: "/students/jobboarding",
+    element: <Job_Boarding />,
+  },
+  {
+    path: "/students/resource/applyjob",
+    element: <Form />,
+  },
+  {
+    path: "/recruiter/companyprofile",
+    element: <CompanyProfile />,
+  },
+  {
+    path: "/student/experiencesharing",
+    element: <ExperiencePage />,
+  },
+  {
+    path: "/recruiter/managejobs",
+    element: <JobLists />,
+  },
+  {
+    path: "/students/jobboarding/jobdetail/:id",
+    element: <JobDetails />,
+  },
+  // {
+  //   path: "/students/jobboarding/jobdetail",
+  //   element: <JobDetails />
+  // },
+  {
+    path: "/students/studentform",
+    element: <Student_Login />,
+  },
+  {
+    path: "/students/recruiterform",
+    element: <Recruiter_Login />,
+  },
+  {
+    path: "/students/adminform",
+    element: <Admin_Login />,
+  },
+  {
+    path: "/general/howitworks",
+    element: <HowItWorks />,
+  },
+  {
+    path: "/students/homepage",
+    element: <StudentHomePage />,
+  },
+  {
+    path: "/recruiter/homepage",
+    element: <RecruiterHomePage />,
   }
   // {
   //   path:"/resumeBuilder",

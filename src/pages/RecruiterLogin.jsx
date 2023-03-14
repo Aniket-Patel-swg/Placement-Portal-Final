@@ -12,8 +12,9 @@ const RecruiterLogin = () => {
         <img src= {img}  className='ClassroomPicture' />
         
         <div className="loginbox">
-          <label htmlFor="Brnach">Email Address</label>
+          <label htmlFor="Branch">Email Address</label>
           <br />
+          <label htmlFor="Name">Company Name</label>
           <input type="text" id='Branch' name='Branch'/>
           <div className="topicinput">
             <label htmlFor="topic">password</label>
@@ -21,7 +22,7 @@ const RecruiterLogin = () => {
             <input type="text" id='topic' name='topic'/>
           </div>
           <div className="submitbutton">
-            <button type="button"><a href="/recruiter/job_posting">Login</a></button>
+            <button type="button"><a href="/recruiter/companyprofile">Login</a></button>
           </div>
         </div>
       </div>

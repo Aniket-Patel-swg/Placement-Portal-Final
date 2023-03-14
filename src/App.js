@@ -6,10 +6,7 @@ import Dashboard from "./pages/Dashboard.jsx"
 import {Route, Routes} from "react-router-dom"
 import ClubIntro from "./components/ClubInfo/ClubIntro.jsx"
 import PlacementStats from "./components/PlacementStats/PlacementStats.jsx"
-import Resumebuilder from "./components/ResumeBuilder/Resumebuilder.jsx"
 import AllClubs from "./components/AllCubs.jsx"
-import JobBoarding from "./components/JobBoarding/JobBoarding.jsx"
-import ApplyPage from "./pages/ApplyPage.jsx"
 import RecruiterLogin from "./pages/RecruiterLogin.jsx"
 import RecruiterAdminPanel from "./pages/RecruiterAdminPanel.jsx"
 import PostJob from "./pages/PostJob.jsx"
@@ -23,7 +20,15 @@ import FacingInterview from "./components/ResourcePageComponents/FacingInterview
 import Companies from "./components/ResourcePageComponents/Companies.jsx"
 import Analytics from './components/ResourcePageComponents/Analytics.jsx'
 import EventDetails from "./components/ResourcePageComponents/EventsDetails.jsx"
+import Job_boarding from './components/JobBoarding/Job_Borading'
+import Form from "./components/JobBoarding/Form.jsx"
+import CompanyProfile from "./components/JobPosting/CompanyProfile.jsx"
+import ExperiencePage from './pages/ExperiencePage.jsx';
+import JobLists from  './components/JobPosting/JobLists';
+import Body from "./components/ResumeBuilder/Body/Body.js"
 // import { Profile } from "./components/Profile Page Component/Profile.jsx";
+
+
 function App() {
   return (
     <div className="App">
@@ -31,14 +36,13 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/students/dashboard" element={<></>} />
         <Route path="/students/profile" element={<ProfilePage />} />
+        <Route path="/students/profile/:id" element={<ProfilePage />} />
         <Route path="/students/register" element={<Register />} />
         <Route path="/students/community" element={<CardPage data={data} />} />
         <Route path="/students/club" element={<ClubIntro />} />
         <Route path="/students/placementstats" element={<PlacementStats />} />
-        <Route path="/students/resumebuilder" element={<Resumebuilder />} />
+        <Route path="/students/resumebuilder" element={<Body />} />
         <Route path="/students/allclubs" element={<AllClubs />} />
-        <Route path="/students/jobboarding" element={<JobBoarding />} />
-        <Route path="/students/applypage" element={<ApplyPage />} />
         <Route path="/recruiter/login" element={<RecruiterLogin />} />
         <Route path="/recruiter/adminpanel" element={<RecruiterAdminPanel />} />
         <Route path="/recruiter/postjob" element={<PostJob />} />
@@ -60,6 +64,11 @@ function App() {
         <Route path="/students/resource/companies" element={<Companies />} />
         <Route path="/students/resource/analytics" element={<Analytics />} />
         <Route path="/students/resource/eventdetails" element={<EventDetails />} />
+        <Route path="/students/resource/jobboarding" element={<Job_boarding />} />
+        <Route path="/students/resource/applyjob" element={<Form />} />
+        <Route path="/recruiter/companyprofile" element={<CompanyProfile />} />
+        <Route path="/student/experiencesharing" element={<ExperiencePage />} />
+        <Route path="/recruiter/joblists" element={<JobLists />} />
       </Routes>
     </div>
   )
